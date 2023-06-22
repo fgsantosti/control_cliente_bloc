@@ -2,7 +2,7 @@
 
 A new Flutter project.
 
-## Getting Started
+## 📚 Getting Started
 
 Neste projeto veremos como utilizar a biblioteca Bloc para realizar  requisições HTTP e gerenciar o estado de nossa aplicação. O aplicativo ira carregar em uma página princial os usuários que estão no servidor. Iniciamente quando executado pela primeira vez, veremos o indicador de carregamento quando os dados estiverem sendo buscados no servidor. E quando eles carregam, e mostrará a lista.
 
@@ -278,7 +278,7 @@ class MyApp extends StatelessWidget {
 }
 
 ```
-## Consumir API com o Dio
+## 🛠️ Consumir API com o Dio
 
 O pacote dio é um poderoso cliente HTTP para Dart/Flutter, que suporta configuração global, interceptadores, FormData, cancelamento de solicitação, upload/download de arquivos, tempo limite e adaptadores personalizados, etc.
 
@@ -293,7 +293,7 @@ No arquivo repository/repositories.dart vamos comentar a função que utiliza o 
 
 ```python
  final dio = Dio();
- 
+
    Future<Map<String, dynamic>> getDio() async {
     var res = await dio.get(userUrl);
     return res.data;
